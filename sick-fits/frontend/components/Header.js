@@ -1,13 +1,15 @@
-import Link from 'next/link';
+import Nav from './Nav';
 
 const Header = () => (
     <div>
-        <Link href='/'>
-            <a>Home</a>
-        </Link>
-        <Link href='/sell'>
-            <a>Sell</a>
-        </Link>
+        <div className="bar">
+            <a href="/">Sick fits!</a>
+            <Nav />
+        </div>
+        <div className="sub-bar">
+            <p>Search</p>
+        </div>
+        <div>Cart</div>
     </div>
 );
 
